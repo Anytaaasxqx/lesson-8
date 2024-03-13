@@ -1,0 +1,43 @@
+/* Стилі для контейнера */
+.schedule {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  /* Стилі для списків уроків */
+  .schedule ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Стилі для елементів списків на понеділок */
+  .monday {
+    background-color: #ffcccc;
+  }
+  
+  /* Стилі для елементів списків на вівторок */
+  .schedule ul:nth-child(2) li {
+    background-color: #ccffcc;
+  }
+  
+  /* Стилі для елементів списків на середу */
+  .schedule ul:nth-child(3) li {
+    background-color: #ccccff;
+  }
+  
+  /* Стилі для елементів списків на четвер */
+  .schedule ul:nth-child(4) li {
+    background-color: #ffffcc;
+  }
+  
+  /* Стилі для елементів списків на п'ятницю */
+  .schedule ul:last-child li {
+    background-color: #ffccff;
+  }
+  
+  /* Додавання ефекту при наведенні на елемент */
+  .schedule li:hover {
+    transform: scale(1.1);
+  }
